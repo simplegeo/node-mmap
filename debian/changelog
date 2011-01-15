@@ -1,3 +1,9 @@
+nodejs-mmap (0.0.1-0sg1) lucid; urgency=low
+
+  * UNRELEASED
+
+ -- SimpleGeo Nerds <nerds@simplegeo.com>  Sat, 15 Jan 2011 00:18:23 +0000
+
 nodejs-mmap (0.0.1-0sg0) unstable; urgency=low
 
   * Debianized
