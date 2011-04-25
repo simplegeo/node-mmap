@@ -1,4 +1,4 @@
 all:
-	nodejs-waf configure build
+	node-waf configure build
 clean:
 	rm -rf ./build
