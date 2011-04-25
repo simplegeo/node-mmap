@@ -2,9 +2,13 @@
 
 mmap(2) bindings for node.js - stop slurping, start mapping.
 
-## Compiling
+## Installing
 
-Easy as pie:
+Through [npm](http://npmjs.org/):
+
+	npm install mmap
+
+Or compile it from source with this one-liner:
 
 	node-waf configure build install
 
@@ -44,7 +48,7 @@ Map a file into memory:
     fs = require('fs'), mmap = require('mmap');
     fd = fs.openSync('/path/to/file', 'r');
     size = fs.fstatSync(fd).size;
-    buffer = new mmap.Buffer(size, mmap.PROT_READ, mmap.MAP_SHARED, fd, 0);
+    buffer = mmap.map(size, mmap.PROT_READ, mmap.MAP_SHARED, fd, 0);
     // calculate faux checksum
     var checksum = 0;
     for (var i = 0; i < buffer.length; i++) {
